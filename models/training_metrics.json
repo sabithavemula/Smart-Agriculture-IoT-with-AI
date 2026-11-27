@@ -1,0 +1,26 @@
+{
+  "dataset_type": "synthetic demonstration data",
+  "rows": 5000,
+  "features": [
+    "soil_moisture",
+    "temperature",
+    "humidity",
+    "light",
+    "water_level"
+  ],
+  "target": "future_soil_moisture_30min",
+  "prediction_horizon": "30 minutes (simulated target)",
+  "train_rows": 4000,
+  "test_rows": 1000,
+  "linear_regression_baseline": {
+    "mae": 1.139,
+    "rmse": 1.415,
+    "r2": 0.9947
+  },
+  "random_forest_regression": {
+    "mae": 1.226,
+    "rmse": 1.546,
+    "r2": 0.9936
+  },
+  "warning": "Metrics measure performance on synthetic data only; they do not establish real-world farm accuracy."
+}
